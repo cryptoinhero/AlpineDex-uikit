@@ -639,8 +639,8 @@ var Icon$1l = function (props) {
 };
 
 var Icon$1k = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 400 400" }, props),
-        React.createElement("image", { width: "400", height: "182", href: '/images/LogoWithoutText.png' })));
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 75 75" }, props),
+        React.createElement("image", { height: "80", href: '/images/LogoWithoutText.png' })));
 };
 
 var Icon$1j = function (props) {
@@ -3919,8 +3919,8 @@ var Icon$a = function (props) {
 
 var Logo$2 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 400 400" }, props),
-        React.createElement("image", { width: "400", height: "182", href: '/images/LogoText.png' })));
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 182 80" }, props),
+        React.createElement("image", { height: "80", href: '/images/LogoText.png' })));
 };
 var LogoWithText = React.memo(Logo$2, function (prev, next) { return prev.isDark === next.isDark; });
 
