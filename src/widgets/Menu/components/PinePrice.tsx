@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon } from "../../../components/Svg";
+import { PineRoundIcon } from "../../../components/Svg";
 import Text from "../../../components/Text/Text";
 import Skeleton from "../../../components/Skeleton/Skeleton";
 
 interface Props {
-  cakePriceUsd?: number;
+  pinePriceUsd?: number;
 }
 
 const PriceLink = styled.a`
@@ -21,18 +21,18 @@ const PriceLink = styled.a`
   }
 `;
 
-const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
-  return cakePriceUsd ? (
+const PinePrice: React.FC<Props> = ({ pinePriceUsd }) => {
+  return pinePriceUsd ? (
     <PriceLink
-      href="https://pancakeswap.finance/swap?outputCurrency=0x35Ddb5198F88423bA7e1f27A687CCFaC0Ab8e59f"
+      href="https://pancakeswap.finance/swap?outputCurrency=0xec5b9074717e467be06e96091f3d47c6e7871a95"
       target="_blank"
     >
-      <PancakeRoundIcon width="24px" mr="8px" />
-      <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <PineRoundIcon width="24px" mr="8px" />
+      <Text color="textSubtle" bold>{`$${pinePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />
   );
 };
 
-export default React.memo(CakePrice);
+export default React.memo(PinePrice);

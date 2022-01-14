@@ -2,12 +2,17 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import throttle from "lodash/throttle";
 import Overlay from "../../components/Overlay/Overlay";
+import { Box } from "../../components/Box";
 import Flex from "../../components/Box/Flex";
 import { useMatchBreakpoints } from "../../hooks";
 import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import { NavProps } from "./types";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import CakePrice from "./components/CakePrice";
+import PinePrice from "./components/PinePrice";
+import LangSelector from "../../components/LangSelector/LangSelector";
+import SocialLinks from "./components/SocialLinks";
 
 const Wrapper = styled.div`
   position: relative;
@@ -68,6 +73,7 @@ const Menu: React.FC<NavProps> = ({
   setLang,
   currentLang,
   cakePriceUsd,
+  pinePriceUsd,
   links,
   children,
 }) => {
@@ -119,6 +125,21 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
+          {!isMobile && (<>
+              <Box mr="12px">
+                <PinePrice pinePriceUsd={pinePriceUsd} />
+              </Box>
+              <Box mr="12px" pt="2px">
+                <LangSelector buttonScale="xs" currentLang={currentLang} langs={langs} setLang={setLang} dropdownPosition='bottom'/>
+              </Box>
+                <Box mr="12px">
+                  <CakePrice cakePriceUsd={cakePriceUsd} />
+                </Box>
+              <Box mr="12px">
+                <SocialLinks />
+              </Box>
+            </>
+          )}
           {globalMenu} {userMenu}
         </Flex>
       </StyledNav>
@@ -133,6 +154,7 @@ const Menu: React.FC<NavProps> = ({
           setLang={setLang}
           currentLang={currentLang}
           cakePriceUsd={cakePriceUsd}
+          pinePriceUsd={pinePriceUsd}
           pushNav={setIsPushed}
           links={links}
         />

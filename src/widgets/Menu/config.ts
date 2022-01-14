@@ -141,6 +141,11 @@ export const links = [
 
 export const socials = [
   {
+    label: "Instagram",
+    icon: "InstagramIcon",
+    href:'https://instagram.com/alpinecoin?utm_medium=copy_link'
+  },
+  {
     label: "Telegram",
     icon: "TelegramIcon",
     href:'https://t.me/Alpinecoin_chat'

@@ -71,6 +71,7 @@ export { default as OpenNewIcon } from "./Icons/OpenNew";
 export { default as PancakesIcon } from "./Icons/Pancakes";
 export { default as PencilIcon } from "./Icons/Pencil";
 export { default as PancakeRoundIcon } from "./Icons/PancakeRound";
+export { default as PineRoundIcon } from "./Icons/PineRound";
 export { default as PocketWatchIcon } from "./Icons/PocketWatch";
 export { default as PlayCircleOutlineIcon } from "./Icons/PlayCircleOutline";
 export { default as PredictionsIcon } from "../../widgets/Menu/icons/Predictions";
