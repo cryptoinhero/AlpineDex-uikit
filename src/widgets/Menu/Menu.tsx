@@ -126,16 +126,16 @@ const Menu: React.FC<NavProps> = ({
         />
         <Flex>
           {!isMobile && (<>
-              <Box mr="12px">
+              <Box mr="12px" pt="4px">
                 <PinePrice pinePriceUsd={pinePriceUsd} />
               </Box>
-              <Box mr="12px" pt="2px">
+              <Box mr="12px" pt="6px">
                 <LangSelector buttonScale="xs" currentLang={currentLang} langs={langs} setLang={setLang} dropdownPosition='bottom'/>
               </Box>
-                <Box mr="12px">
+                <Box mr="12px" pt="4px">
                   <CakePrice cakePriceUsd={cakePriceUsd} />
                 </Box>
-              <Box mr="12px">
+              <Box mr="12px" pt="4px">
                 <SocialLinks />
               </Box>
             </>
