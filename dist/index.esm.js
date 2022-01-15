@@ -3220,7 +3220,7 @@ var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {
     small: "4px",
     default: "16px",
-    card: "24px",
+    card: "36px",
     circle: "50%",
 };
 var zIndices = {
@@ -3908,8 +3908,8 @@ var Icon$b = function (props) {
 
 var Logo$2 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 163 56" }, props),
-        React.createElement("image", { height: "56", href: '/images/LogoText.png' })));
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 163 40" }, props),
+        React.createElement("image", { height: "40", href: '/images/LogoText.png' })));
 };
 var LogoWithText = React.memo(Logo$2, function (prev, next) { return prev.isDark === next.isDark; });
 
