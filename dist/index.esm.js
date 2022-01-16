@@ -4090,7 +4090,7 @@ var MenuItem = function (_a) {
     return (React.createElement(StyledFooter, __assign({ p: ["40px 16px", null, "56px 40px 32px 40px"] }, props, { justifyContent: "center" }),
         React.createElement(Flex, { flexDirection: "column", width: ["100%", null, "1200px;"] },
             React.createElement(StyledIconMobileContainer, { display: ["block", null, "none"] },
-                React.createElement(Icon$1l, { width: "80px" })),
+                React.createElement(Icon$1l, { width: "163px" })),
             React.createElement(Flex, { order: [2, null, 1], flexDirection: ["column", null, "row"], justifyContent: "space-between", alignItems: "flex-start", mb: ["42px", null, "36px"] }, items === null || items === void 0 ? void 0 :
                 items.map(function (item) {
                     var _a;
