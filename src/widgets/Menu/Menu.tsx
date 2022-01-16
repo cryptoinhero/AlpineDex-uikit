@@ -4,11 +4,12 @@ import throttle from "lodash/throttle";
 import Overlay from "../../components/Overlay/Overlay";
 import { Box } from "../../components/Box";
 import Flex from "../../components/Box/Flex";
+import Footer from "../../components/Footer";
 import { useMatchBreakpoints } from "../../hooks";
 import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import { NavProps } from "./types";
-import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import { MENU_HEIGHT, MOBILE_MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
 import CakePrice from "./components/CakePrice";
 import PinePrice from "./components/PinePrice";
 import LangSelector from "../../components/LangSelector/LangSelector";
@@ -75,6 +76,8 @@ const Menu: React.FC<NavProps> = ({
   cakePriceUsd,
   pinePriceUsd,
   links,
+  footerLinks,
+  buyCakeLabel,
   children,
 }) => {
   const { isMobile, isTablet } = useMatchBreakpoints();
@@ -157,9 +160,22 @@ const Menu: React.FC<NavProps> = ({
           pinePriceUsd={pinePriceUsd}
           pushNav={setIsPushed}
           links={links}
+          footerLinks={footerLinks}
+          buyCakeLabel={buyCakeLabel}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}
+          <Footer
+            items={footerLinks}
+            isDark={isDark}
+            toggleTheme={toggleTheme}
+            langs={langs}
+            setLang={setLang}
+            currentLang={currentLang}
+            cakePriceUsd={cakePriceUsd}
+            buyCakeLabel={buyCakeLabel}
+            mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
+          />
         </Inner>
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
       </BodyWrapper>

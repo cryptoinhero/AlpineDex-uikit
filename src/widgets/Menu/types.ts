@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import { FooterLinkType } from "../../components/Footer/types";
 import { Colors } from "../../theme/types";
 
 export interface Language {
@@ -44,9 +45,11 @@ export interface PanelProps {
   cakePriceUsd?: number;
   pinePriceUsd?: number;
   currentLang: string;
+  buyCakeLabel: string;
   langs: Language[];
   setLang: (lang: Language) => void;
   links: Array<MenuEntry>;
+  footerLinks: Array<FooterLinkType>;
 }
 
 export interface NavProps extends PanelProps {

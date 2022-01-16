@@ -7,6 +7,7 @@ import Heading from "../../components/Heading/Heading";
 import Text from "../../components/Text/Text";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
+import { footerLinks } from "../../components/Footer/config";
 import { Language } from "./types";
 import { links } from "./config";
 import { MenuEntry } from "./components/MenuEntry";
@@ -100,9 +101,11 @@ const useProps = () => {
     cakePriceUsd: 0.023158668932877668,
     pinePriceUsd: 0.023158668932877668,
     links,
+    footerLinks,
     profile: null,
     userMenu: <UserMenuComponent account="0xbdda50183d817c3289f895a4472eb475967dc980" />,
     globalMenu: <GlobalMenuComponent />,
+    buyCakeLabel: "Buy ADEX",
   });
 
   useEffect(() => {
@@ -119,9 +122,11 @@ const useProps = () => {
         cakePriceUsd: 0.023158668932877668,
         pinePriceUsd: 0.023158668932877668,
         links,
+        footerLinks,
         profile: null,
         userMenu: <UserMenuComponent account="0xbdda50183d817c3289f895a4472eb475967dc980" />,
         globalMenu: <GlobalMenuComponent />,
+        buyCakeLabel: 'Buy ADEX'
       });
     }, 2000);
     return () => {

@@ -24,7 +24,7 @@ const PriceLink = styled.a`
 const PinePrice: React.FC<Props> = ({ pinePriceUsd }) => {
   return pinePriceUsd ? (
     <PriceLink
-      href="https://pancakeswap.finance/swap?outputCurrency=0xec5b9074717e467be06e96091f3d47c6e7871a95"
+      href="https://alpinedex.finance/swap?outputCurrency=0xec5b9074717e467be06e96091f3d47c6e7871a95"
       target="_blank"
     >
       <PineRoundIcon width="24px" mr="8px" />
