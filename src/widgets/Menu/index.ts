@@ -1,5 +1,6 @@
 export { default as Menu } from "./Menu";
 export { status as menuStatus, links as menuConfig } from "./config";
+export type { FooterLinkType } from "../../components/Footer/types";
 export type { NavProps, Language, MenuEntry } from "./types";
 
 export { default as UserMenu } from "./components/UserMenu";
