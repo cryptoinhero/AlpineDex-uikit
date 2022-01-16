@@ -4116,7 +4116,7 @@ var MenuItem = function (_a) {
                         })));
                 }),
                 React__default['default'].createElement(Box, { display: ["none", null, "block"] },
-                    React__default['default'].createElement(Icon$1l, { width: "80px" }))),
+                    React__default['default'].createElement(Icon$1l, { width: "163px" }))),
             React__default['default'].createElement(StyledSocialLinks, { order: [2], pb: ["42px", null, "32px"], mb: ["0", null, "32px"] }))));
 };
 

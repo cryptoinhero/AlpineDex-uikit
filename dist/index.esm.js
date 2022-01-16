@@ -4102,7 +4102,7 @@ var MenuItem = function (_a) {
                         })));
                 }),
                 React.createElement(Box, { display: ["none", null, "block"] },
-                    React.createElement(Icon$1l, { width: "80px" }))),
+                    React.createElement(Icon$1l, { width: "163px" }))),
             React.createElement(StyledSocialLinks, { order: [2], pb: ["42px", null, "32px"], mb: ["0", null, "32px"] }))));
 };
 
