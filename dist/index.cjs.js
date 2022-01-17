@@ -4181,7 +4181,7 @@ var Icon$b = function (props) {
 };
 
 var Icon$a = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 500 500" }, props),
         React__default['default'].createElement("rect", { x: "125.98", y: "127.39", width: "108.35", height: "108.35", rx: "17.02", fill: "#b8aed3" }),
         React__default['default'].createElement("rect", { x: "257.94", y: "127.39", width: "108.35", height: "108.35", rx: "17.02", fill: "#b8aed3" }),
         React__default['default'].createElement("rect", { x: "125.98", y: "257.44", width: "108.35", height: "108.35", rx: "17.02", fill: "#b8aed3" }),
