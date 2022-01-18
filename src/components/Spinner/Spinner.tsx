@@ -6,7 +6,7 @@ import { SpinnerProps } from "./types";
 
 const pulse = keyframes`
   0% { transform: rotate(0deg); }
-  20% { transform: rotate(360deg); }
+  20% { transform: rotate(0deg); }
   40% { transform: rotate(0deg); }
   50% { transform: scale(1); }
   55% { transform: scale(1.1); }
@@ -24,7 +24,7 @@ const Container = styled.div`
 `;
 
 const FloatingPanIcon = styled(PanIcon)`
-position: absolute;
+// position: absolute;
 top: 0;
 left: 0;
 animation: ${pulse} 5s linear infinite;
