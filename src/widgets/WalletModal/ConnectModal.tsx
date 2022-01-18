@@ -76,11 +76,11 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
         </WalletWrapper>
         <Box p="24px">
           <Text textAlign="center" color="textSubtle" as="p" mb="16px">
-            {/* {t("Haven’t got a crypto wallet yet?")} */}
+            {t("Please use wallet connect when connecting to mobiles & tablets.")}
           </Text>
           <Button
             as="a"
-            href="https://docs.pancakeswap.finance/get-started/connection-guide"
+            href="https://docs.alpinedex.finance/get-started/connection-guide"
             variant="subtle"
             width="100%"
             {...getExternalLinkProps()}

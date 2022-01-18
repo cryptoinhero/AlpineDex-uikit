@@ -5079,8 +5079,8 @@ var ConnectModal = function (_a) {
                         React.createElement(WalletCard, { walletConfig: wallet, login: login, onDismiss: onDismiss }))); }),
                     !showMore && React.createElement(MoreWalletCard, { t: t, onClick: function () { return setShowMore(true); } }))),
             React.createElement(Box, { p: "24px" },
-                React.createElement(Text, { textAlign: "center", color: "textSubtle", as: "p", mb: "16px" }),
-                React.createElement(Button, __assign({ as: "a", href: "https://docs.pancakeswap.finance/get-started/connection-guide", variant: "subtle", width: "100%" }, getExternalLinkProps()), t("Learn How to Connect"))))));
+                React.createElement(Text, { textAlign: "center", color: "textSubtle", as: "p", mb: "16px" }, t("Please use wallet connect when connecting to mobiles & tablets.")),
+                React.createElement(Button, __assign({ as: "a", href: "https://docs.alpinedex.finance/get-started/connection-guide", variant: "subtle", width: "100%" }, getExternalLinkProps()), t("Learn How to Connect"))))));
 };
 var templateObject_1$2;
 
