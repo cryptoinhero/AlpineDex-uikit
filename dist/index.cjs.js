@@ -4585,7 +4585,7 @@ var templateObject_1$d;
 var PriceLink$1 = styled__default['default'].a(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: "https://alpinedex.finance/swap?outputCurrency=0x35Ddb5198F88423bA7e1f27A687CCFaC0Ab8e59f", target: "_blank" },
+    return cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: "https://alpinedex.finance/swap?outputCurrency=0xd060AF7cb86102aBc9F0889B18C53F1Bd4c90431", target: "_blank" },
         React__default['default'].createElement(Icon$13, { width: "24px", mr: "8px" }),
         React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
 };

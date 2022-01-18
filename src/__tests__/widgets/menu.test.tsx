@@ -1745,7 +1745,7 @@ it("renders correctly", () => {
               >
                 <a
                   class="c28"
-                  href="https://pancakeswap.finance/swap?outputCurrency=0x35Ddb5198F88423bA7e1f27A687CCFaC0Ab8e59f"
+                  href="https://pancakeswap.finance/swap?outputCurrency=0xd060AF7cb86102aBc9F0889B18C53F1Bd4c90431"
                   target="_blank"
                 >
                   <svg

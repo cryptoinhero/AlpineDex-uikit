@@ -88,7 +88,7 @@ const MenuItem: React.FC<FooterProps> = ({
             </Box>
             <Button
               as="a"
-              href="https://alpinedex.finance/swap?outputCurrency=0x35Ddb5198F88423bA7e1f27A687CCFaC0Ab8e59f"
+              href="https://alpinedex.finance/swap?outputCurrency=0xd060AF7cb86102aBc9F0889B18C53F1Bd4c90431"
               target="_blank"
               scale="sm"
               endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
