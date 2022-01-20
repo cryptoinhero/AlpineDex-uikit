@@ -28,7 +28,7 @@ const PinePrice: React.FC<Props> = ({ pinePriceUsd }) => {
       target="_blank"
     >
       <PineRoundIcon width="24px" mr="8px" />
-      <Text color="textSubtle" bold>{`$${pinePriceUsd.toFixed(3)}`}</Text>
+      <Text color="textSubtle" bold>{`$${pinePriceUsd.toFixed(7)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />

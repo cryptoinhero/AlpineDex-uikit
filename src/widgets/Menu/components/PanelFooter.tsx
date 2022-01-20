@@ -6,6 +6,7 @@ import { MENU_ENTRY_HEIGHT } from "../config";
 import { PanelProps, PushedProps } from "../types";
 import CakePrice from "./CakePrice";
 import PinePrice from "./PinePrice";
+import Mail from "./Mail"
 import ThemeSwitcher from "./ThemeSwitcher";
 import SocialLinks from "./SocialLinks";
 import LangSelector from "./LangSelector";
@@ -24,7 +25,7 @@ const SettingsEntry = styled.div`
   align-items: center;
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: 0 8px;
+  padding: 0 16px;
 `;
 
 const SocialEntry = styled.div`
@@ -64,8 +65,8 @@ const PanelFooter: React.FC<Props> = ({
       </SocialEntry>
       <SettingsEntry>
         {/* <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} /> */}
-        <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
         <PinePrice pinePriceUsd={pinePriceUsd} />
+        <Mail />
       </SettingsEntry>
     </Container>
   );

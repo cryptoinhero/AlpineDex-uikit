@@ -13,7 +13,9 @@ import { MENU_HEIGHT, MOBILE_MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_F
 import CakePrice from "./components/CakePrice";
 import PinePrice from "./components/PinePrice";
 import LangSelector from "../../components/LangSelector/LangSelector";
+import Mail from "./components/Mail"
 import SocialLinks from "./components/SocialLinks";
+
 
 const Wrapper = styled.div`
   position: relative;
@@ -132,8 +134,8 @@ const Menu: React.FC<NavProps> = ({
               <Box mr="12px" pt="4px">
                 <PinePrice pinePriceUsd={pinePriceUsd} />
               </Box>
-              <Box mr="12px" pt="6px">
-                <LangSelector buttonScale="xs" currentLang={currentLang} langs={langs} setLang={setLang} dropdownPosition='bottom'/>
+              <Box mr="12px" pt="4px">
+                <Mail />
               </Box>
                 <Box mr="12px" pt="4px">
                   <CakePrice cakePriceUsd={cakePriceUsd} />
